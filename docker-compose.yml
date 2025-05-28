@@ -1,20 +1,20 @@
 version: "3"
 services:
   backend:
-    build: ./backend
+    build: ./api-resume
     container_name: backend
     restart: always
     env_file:
-      - ./backend/.env
+      - ./api-resume/.env
     ports:
       - "127.0.0.1:8080:8080"
 
   frontend:
-    build: ./frontend
+    build: ./app-resume
     container_name: frontend
     restart: always
     env_file:
-      - ./frontend/.env
+      - ./app-resume/.env
     depends_on:
       - backend
     ports:
