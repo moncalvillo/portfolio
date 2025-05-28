@@ -1,8 +1,9 @@
 version: "3"
 services:
   backend:
+    image: portfolio-backend
     build: ./api-resume
-    container_name: backend
+    container_name: portfolio-backend
     restart: always
     env_file:
       - ./api-resume/.env
@@ -11,9 +12,10 @@ services:
     networks:
       - portfolio-net
 
-  frontend:
+  frontend:  
+    image: portfolio-frontend
     build: ./app-resume
-    container_name: frontend
+    container_name: portfolio-frontend
     restart: always
     env_file:
       - ./app-resume/.env
@@ -23,7 +25,15 @@ services:
       - "127.0.0.1:3000:80"
     networks:
       - portfolio-net
+      - nginx-proxy
+    environment:
+      - VIRTUAL_HOST=portfolio.jarasite.com
+      - LETSENCRYPT_HOST=portfolio.jarasite.com
+      - LETSENCRYPT_EMAIL=moncalvillo.pablo@gmail.com
 
 networks:
-  portfolio-net:
+  nginx-proxy:
     external: true
+  portfolio-net:
+    external: false
+  
