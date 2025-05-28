@@ -1,0 +1,32 @@
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+
+$theme-colors: map-merge($theme-colors, (
+    "primary-palette": #d4dfe1,
+    "bg-palette": #b6c4c7,
+    "accent-palette": #052011,
+    "secondary-palette": #054342,
+    )
+);
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'AR One Sans', sans-serif;
+}
+
+
+:root{
+    --bg-palette: #{map-get($theme-colors, "bg-palette")};
+
+    background-color: var(--bg-palette) ;
+}
+
+
+

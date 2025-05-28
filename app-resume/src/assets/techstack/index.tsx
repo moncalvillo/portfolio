@@ -1,0 +1,13 @@
+export { default as react } from "./reactb&w.png";
+export { default as javascript } from "./javascriptb&w.jpeg";
+export { default as typescript } from "./typescriptb&w.jpeg";
+export { default as nodejs } from "./nodejsb&w.png";
+export { default as graphql } from "./graphqlb&w.png";
+export { default as docker } from "./dockerb&w.png";
+export { default as postgresql } from "./postgresqlb&w.png";
+export { default as aws } from "./awsb&w.jpeg";
+export { default as mysql } from "./mysqlb&w.png";
+export { default as git } from "./gitb&w.png";
+export { default as sequelize } from "./sequelizeb&w.png";
+export { default as java } from "./java.jpeg";
+export { default as bitbucket } from "./bitbucket.png";

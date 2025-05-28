@@ -1,0 +1,91 @@
+
+
+
+.techs-renderer{
+
+
+    .techs-container{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 1rem;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        gap: 5px;
+        width: 100%;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        
+
+        
+        .techs-item{
+            cursor: pointer;
+
+            border: 1px solid #e9e9e9;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            position: relative; 
+        
+            .tech-item-logo{
+                width: 230px;
+                height: 350px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                object-fit: contain;
+                overflow: hidden;
+                img{
+                    object-fit: contain;
+                }
+                
+            }
+            .tech-info {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.7); // Añade un fondo semi-transparente, ajusta a tu gusto
+                color: white; 
+                opacity: 0; 
+                transition: opacity 0.3s ease; 
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                
+                h2, p {
+                    margin: 0;
+                }
+            }
+    
+            &:hover .tech-info {
+                opacity: 1; 
+            }
+
+           
+
+        }
+        
+    }
+    
+}
+
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}

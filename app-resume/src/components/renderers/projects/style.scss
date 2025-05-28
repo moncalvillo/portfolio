@@ -1,0 +1,40 @@
+.projects-renderer {
+
+    .projects-container{
+
+
+        .project-item {
+            background-color: #fff;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+    
+    
+    
+    
+    
+    
+            .project-button{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p{
+                    margin: 0;
+                }
+    
+            }
+    
+            .project-techs{
+                margin: 20px 0 ;
+            }
+    
+    
+        }
+    }
+   
+
+
+}

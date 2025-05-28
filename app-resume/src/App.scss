@@ -1,0 +1,67 @@
+
+
+
+.shadowed{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.footer-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 1rem;
+}
+
+
+.bordered{
+  border: 1px solid red;
+}
+
+
+// .typog{
+//   color: var(--accent-color);
+// }
+
+
+
+.title{
+  margin: 0.5em 0;
+
+}
+.primary-title{
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 1.2105263157894737
+}
+
+
+
+
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.fade-out {
+  animation-name: fadeOut;
+  animation-timing-function: ease-out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
