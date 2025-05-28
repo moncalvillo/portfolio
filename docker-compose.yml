@@ -8,6 +8,8 @@ services:
       - ./api-resume/.env
     ports:
       - "127.0.0.1:8080:8080"
+    networks:
+      - portfolio-net
 
   frontend:
     build: ./app-resume
@@ -19,3 +21,9 @@ services:
       - backend
     ports:
       - "127.0.0.1:3000:80"
+    networks:
+      - portfolio-net
+
+networks:
+  portfolio-net:
+    external: true
